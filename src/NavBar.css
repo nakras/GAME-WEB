@@ -1,0 +1,84 @@
+@keyframes floatImage {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateX(-.5rem);
+    }
+    50% {
+      transform: translateX(3.5rem);
+    }
+  }
+  
+  .float-animation {
+    animation: floatImage 4s ease-in-out infinite;
+  }
+  @media (max-width: 768px) {
+    @keyframes floatImage {
+        0% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateX(-.5rem);
+        }
+        50% {
+          transform: translateX(2.5rem);
+        }
+      }
+    .float-animation {
+      animation-duration: 4s; /* Adjust the animation duration for smaller screens */
+      animation-timing-function: ease-out; /* Adjust the timing function if needed */
+    }
+  }
+  @media (max-width: 530px) {
+    @keyframes floatImage {
+        0% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateX(-.5rem);
+        }
+        50% {
+          transform: translateX(1.5rem);
+        }
+      }
+    .float-animation {
+      animation-duration: 4s; /* Adjust the animation duration for smaller screens */
+      animation-timing-function: ease-out; /* Adjust the timing function if needed */
+    }
+  }
+  @media (max-width: 480px) {
+    @keyframes floatImage {
+        0% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateX(-1rem);
+        }
+        50% {
+          transform: translateX(.5rem);
+        }
+      }
+    .float-animation {
+      animation-duration: 4s; /* Adjust the animation duration for smaller screens */
+      animation-timing-function: ease-out; /* Adjust the timing function if needed */
+    }
+  }
+
+  @media (max-width: 432px) {
+    @keyframes floatImage {
+        0% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateX(-.5rem);
+        }
+        50% {
+          transform: translateX(.5rem);
+        }
+      }
+    .float-animation {
+      animation-duration: 4s; /* Adjust the animation duration for smaller screens */
+      animation-timing-function: ease-out; /* Adjust the timing function if needed */
+    }
+  }
